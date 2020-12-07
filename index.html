@@ -17,8 +17,9 @@
         <!-- container for header -->
         <header class="header">
             <h1>Work Day Scheduler</h1>
-            <p>A simple calender app for scheduling your work day.</p>
+            <p class>A simple calender app for scheduling your work day.</p>
             <p class="current-date"></p>
+            <p class="current-time"><p>
         </header>
 
         <!-- containers for time slots -->
@@ -27,8 +28,8 @@
                 <div class="time col-2 col-lg-1">
                     <p>9 am</p>
                 </div>
-                <div class="text-input-box col-9 col-lg-10">
-                    <p>placeholder text</p>
+                <div class="text-input-box col-9 col-lg-10 9" id = "nineAM">
+                    <p class="nineAM"></p>
                 </div>
                 <div class="icon col-1">
                     <button type="button" class="btn-save"><span class="oi oi-pencil text-light"></span></button>
@@ -39,8 +40,8 @@
                 <div class="time col-2 col-lg-1">
                     <p>10 am</p>
                 </div>
-                <div class="text-input-box col-9 col-lg-10">
-                    <p>placeholder text</p>
+                <div class="text-input-box col-9 col-lg-10 id-2 10" id = "tenAM">
+                    <p class="tenAM"></p>
                 </div>
                 <div class="icon col-1">
                     <button type="button" class="btn-save"><span class="oi oi-pencil text-light"></span></button>
@@ -51,8 +52,8 @@
                 <div class="time col-2 col-lg-1">
                     <p>11 am</p>
                 </div>
-                <div class="text-input-box col-9 col-lg-10">
-                    <p>placeholder text</p>
+                <div class="text-input-box col-9 col-lg-10 id-3 11" id = "elevenAM">
+                    <p class="elevenAM"></p>
                 </div>
                 <div class="icon col-1">
                     <button type="button" class="btn-save"><span class="oi oi-pencil text-light"></span></button>
@@ -63,8 +64,8 @@
                 <div class="time col-2 col-lg-1">
                     <p>12 pm</p>
                 </div>
-                <div class="text-input-box col-9 col-lg-10">
-                    <p>placeholder text</p>
+                <div class="text-input-box col-9 col-lg-10 id-4 12" id = "twelveAM">
+                    <p class="twelveAM"></p>
                 </div>
                 <div class="icon col-1">
                     <button type="button" class="btn-save"><span class="oi oi-pencil text-light"></span></button>
@@ -75,8 +76,8 @@
                 <div class="time col-2 col-lg-1">
                     <p>1 pm</p>
                 </div>
-                <div class="text-input-box col-9 col-lg-10">
-                    <p>placeholder text</p>
+                <div class="text-input-box col-9 col-lg-10 1" id = "oneAM">
+                    <p class="oneAM"></p>
                 </div>
                 <div class="icon col-1">
                     <button type="button" class="btn-save"><span class="oi oi-pencil text-light"></span></button>
@@ -87,8 +88,8 @@
                 <div class="time col-2 col-lg-1">
                     <p>2 pm</p>
                 </div>
-                <div class="text-input-box col-9 col-lg-10">
-                    <p>placeholder text</p>
+                <div class="text-input-box col-9 col-lg-10 2" id = "twoAM">
+                    <p class="twoAM"></p>
                 </div>
                 <div class="icon col-1">
                     <button type="button" class="btn-save"><span class="oi oi-pencil text-light"></span></button>
@@ -99,8 +100,8 @@
                 <div class="time col-2 col-lg-1">
                     <p>3 pm</p>
                 </div>
-                <div class="text-input-box col-9 col-lg-10">
-                    <p>placeholder text</p>
+                <div class="text-input-box col-9 col-lg-10 3" id = "threeAM">
+                    <p class="threeAM"></p>
                 </div>
                 <div class="icon col-1">
                     <button type="button" class="btn-save"><span class="oi oi-pencil text-light"></span></button>
@@ -111,8 +112,8 @@
                 <div class="time col-2 col-lg-1">
                     <p>4 pm</p>
                 </div>
-                <div class="text-input-box col-9 col-lg-10">
-                    <p>placeholder text</p>
+                <div class="text-input-box col-9 col-lg-10 4" id = "fourAM">
+                    <p class="fourAM"></p>
                 </div>
                 <div class="icon col-1">
                     <button type="button" class="btn-save"><span class="oi oi-pencil text-light"></span></button>
@@ -123,8 +124,8 @@
                 <div class="time col-2 col-lg-1">
                     <p>5 pm</p>
                 </div>
-                <div class="text-input-box col-9 col-lg-10">
-                    <p>placeholder text</p>
+                <div class="text-input-box col-9 col-lg-10 5" id = "fiveAM">
+                    <p class="fiveAM"></p>
                 </div>
                 <div class="icon col-1">
                     <button type="button" class="btn-save"><span class="oi oi-pencil text-light"></span></button>
@@ -132,15 +133,12 @@
             </div>
         </div>
     </main>
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui-touch-punch/0.2.3/jquery.ui.touch-punch.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.15.0/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js" integrity="sha512-qTXRIMyZIFb8iQcfjXWCO8+M5Tbc38Qi5WzdPOYZHIlZpzBHG3L3by84BBBOiRGiEb7KKtAOAs5qYdUiZiQNNQ==" crossorigin="anonymous"></script>
     <script src="./assets/js/script.js"></script>
 </body>
 

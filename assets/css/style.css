@@ -15,7 +15,6 @@ header{
 }
 
 .text-input-box{
-    background-color: grey;
     border-top: 1px dashed white;
 }
 
@@ -32,6 +31,7 @@ header{
     border: none;
     background-color: lightblue;
     transition: 0.3s ease-in-out;
+    border-top: 1px dashed white;
 }
 .btn-save:hover{
     background-color: blue;
@@ -40,4 +40,12 @@ header{
 .body{
     border-top: 10px solid black;
     padding-top: 20px;
+
+}
+textarea{
+    width: 100%;
+}
+
+textarea{
+    background-color: white;
 }
