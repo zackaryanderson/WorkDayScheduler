@@ -15,7 +15,6 @@ header{
 }
 
 .text-input-box{
-    background-color: grey;
     border-top: 1px dashed white;
 }
 
@@ -45,4 +44,8 @@ header{
 }
 textarea{
     width: 100%;
+}
+
+textarea{
+    background-color: white;
 }
