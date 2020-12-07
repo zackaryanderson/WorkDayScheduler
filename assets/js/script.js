@@ -7,7 +7,7 @@ var time = new Date().getHours();
 console.log(time);
 
 function keepTrack() {
-    if (time < 10){
+    if (time < 10) {
         $(".9").addClass("bg-warning");
         $(".10").addClass("bg-success");
         $(".11").addClass("bg-success");
@@ -137,14 +137,13 @@ $(".text-input-box").on("blur", "textarea", function () {
         .val()
         .trim();
     var taskP = $("<p>")
-        .addClass(this.className,"fill-in")
+        .addClass(this.className, "fill-in")
         .text(text);
     $(this).replaceWith(taskP);
 });
 
 
 // save/load functions
-var stuffToDo = {};
 var saveTasks = function () {
     if (!stuffToDo) {
         stuffToDo = {
@@ -159,7 +158,6 @@ var saveTasks = function () {
             five: []
         };
     }
-    //stuffToDo = $(".text-input-box").text();
 
     stuffToDo.nine = document.getElementById("nineAM").textContent;
     stuffToDo.ten = document.getElementById("tenAM").textContent;
@@ -176,6 +174,8 @@ var saveTasks = function () {
 
 var loadTasks = function () {
 
+    stuffToDo = JSON.parse(localStorage.getItem("stuffToDo"));
+
     if (!stuffToDo) {
         stuffToDo = {
             nine: [],
@@ -189,8 +189,6 @@ var loadTasks = function () {
             five: []
         };
     }
-
-    stuffToDo = JSON.parse(localStorage.getItem("stuffToDo"));
 
     //document.getElementById("nineAM").textContent = stuffToDo.nine;
     $(".nineAM").text(stuffToDo.nine);
@@ -207,8 +205,7 @@ var loadTasks = function () {
 
 loadTasks();
 
-setInterval(function() {
-   saveTasks();
-   keepTrack();
-},1000);
-//console.log($(".text-input-box").text());
+setInterval(function () {
+    saveTasks();
+    keepTrack();
+}, 1000);
