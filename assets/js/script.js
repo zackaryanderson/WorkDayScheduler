@@ -126,7 +126,7 @@ $(".text-input-box").on("click", function () {
         .text()
         .trim();
     var textInput = $("<textarea>")
-        //.addClass(this.className)
+        .addClass(this.className)
         .val(text);
     $(this).find("p").replaceWith(textInput);
     textInput.trigger("focus");
@@ -137,17 +137,10 @@ $(".text-input-box").on("blur", "textarea", function () {
         .val()
         .trim();
     var taskP = $("<p>")
-        //.addClass(this.className,"fill-in")
+        .addClass(this.className,"fill-in")
         .text(text);
     $(this).replaceWith(taskP);
 });
-
-// function editBox(event){
-    
-// }
-
-
-//document.querySelector(".btn-save").addEventListener("click",editBox);
 
 
 // save/load functions
